@@ -55,6 +55,7 @@ const Card = ({ position, card, scrollYProgress }) => {
       <p className="mb-8 max-w-lg text-center text-sm md:text-base">
         {card.description}
       </p>
+
       <a
         href={card.routeTo}
         className={`flex items-center gap-2 rounded px-6 py-4 text-base font-medium uppercase text-black transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 md:text-lg ${
@@ -68,6 +69,7 @@ const Card = ({ position, card, scrollYProgress }) => {
         <span>Learn more</span>
         <FiArrowRight />
       </a>
+      
     </motion.div>
   );
 };
